@@ -19,43 +19,51 @@ The project also implements:
 - private subnet isolation
 - secure AWS service communication without internet dependency
 
-## Architecture Design
+## Architecture Diagram
 
+```mermaid
 flowchart TB
     User[User / Cloud Engineer]
     IAM[AWS IAM Authentication]
     SSM[AWS Systems Manager<br/>Session Manager]
 
     subgraph AWS[AWS Cloud]
+
         subgraph VPC[VPC: project-5-secure-vpc<br/>CIDR: 10.0.0.0/16]
 
             subgraph Public[Public Subnets]
-                IGW[Internet Gateway<br/>No public EC2 / No Bastion Host]
+                IGW[Internet Gateway<br/>No Public EC2 / No Bastion Host]
             end
 
             subgraph Private[Private Subnets]
                 EC2[Private EC2 Instance<br/>No Public IP<br/>No SSH / Port 22 Closed]
+
                 EP1[SSM Interface Endpoint]
                 EP2[SSMMessages Interface Endpoint]
                 EP3[EC2Messages Interface Endpoint]
             end
 
             CW[CloudWatch Logs<br/>Session Logs]
+
             KMS[AWS KMS<br/>Customer Managed Key]
+
         end
     end
 
     User --> IAM
     IAM --> SSM
+
     SSM --> EP1
     SSM --> EP2
     SSM --> EP3
+
     EP1 --> EC2
     EP2 --> EC2
     EP3 --> EC2
 
     EC2 --> CW
     CW --> KMS
+```
 
 The infrastructure was designed using a private subnet architecture to reduce public exposure and follow least-privilege networking principles.
 
