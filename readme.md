@@ -149,13 +149,27 @@ This project improved understanding of:
 
 ### VPC Architecture
 
+![VPC Overview](screenshots/vpc-overview.png)
 ![VPC Endpoints Security Group](screenshots/vpce-sg.png)
 ![Route tables](screenshots/route-tables.png)
 
-
 ### Private EC2 Configuration
+
 ![EC2 Configuration](screenshots/EC2-Configuration.png)
 ![EC2 Configuration](screenshots/ec2-sg.png)
+
+### Private Subnets
+
+![Private Subnet](screenshots/project-5-private-subnet1.png)
+![Private Subnet](screenshots/project-5-private-subnet2.png)
+
+### EC2 IAM role
+
+![SSM EC2 role](screenshots/project-5-ssm-ec2-role.png)
+
+### Session Manager Preferences
+
+![Session Manager Preferences](screenshots/session-manager-preferences.png)
 
 ### Session Manager Access
 
@@ -163,13 +177,20 @@ This project improved understanding of:
 ![Commands](screenshots/curl-ping.png)
 ![SSM agent](screenshots/ssm-agent-status.png)
 
-
 ### VPC Endpoints
 
 ![SSM messages endpoint](screenshots/ssmmessages-endpoint.png)
 ![SSM endpoint](screenshots/ssm-endpoint.png)
 ![VPC Endpoints](screenshots/Endpoints.png)
+![CloudWatch Logs Endpoint](screenshots/CloudWatch-Logs-endpoint.png)
 
-### KMS-Encrypted CloudWatch Logs
 ### Session Logs
+
+[!Session logs](screenshots/cloudwatch-session-logs.png)
+[!Session logs](screenshots/ssm-log-events1.png)
+[!Session logs](screenshots/ssm-log-events2.png)
+[!Session logs](screenshots/ssm-log-events3.png)
+
 ### VPC Flow Logs
+[!VPC Flow logs](screenshots/vpcflow-logs1.png)
+[!VPC Flow logs](screenshots/vpcflow-logs2.png)
