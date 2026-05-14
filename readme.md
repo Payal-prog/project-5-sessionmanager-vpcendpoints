@@ -186,11 +186,12 @@ This project improved understanding of:
 
 ### Session Logs
 
-[!Session logs](screenshots/cloudwatch-session-logs.png)
-[!Session logs](screenshots/ssm-log-events1.png)
-[!Session logs](screenshots/ssm-log-events2.png)
-[!Session logs](screenshots/ssm-log-events3.png)
+![Session logs](screenshots/cloudwatch-session-logs.png)
+![Session logs](screenshots/ssm-log-events1.png)
+![Session logs](screenshots/ssm-log-events2.png)
+![Session logs](screenshots/ssm-log-events3.png)
 
 ### VPC Flow Logs
-[!VPC Flow logs](screenshots/vpcflow-logs1.png)
-[!VPC Flow logs](screenshots/vpcflow-logs2.png)
+
+![VPC Flow logs](screenshots/vpcflow-logs1.png)
+![VPC Flow logs](screenshots/vpcflow-logs2.png)
